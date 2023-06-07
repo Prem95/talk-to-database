@@ -19,7 +19,7 @@ const PARTNER_LOGOS = [
 export default function Partners() {
   return (
     <PartnersWrapper>
-      <Title>official partners with</Title>
+      {/* <Title>official partners with</Title>
       <Swiper
         modules={[Autoplay]}
         slidesPerView={6}
@@ -39,7 +39,7 @@ export default function Partners() {
             <NextImage src={'/partners/' + logo} alt={normalizePartnerLogoName(logo)} width={128} height={128} />
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
     </PartnersWrapper>
   );
 }
