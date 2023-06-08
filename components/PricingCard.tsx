@@ -30,7 +30,7 @@ export default function PricingCard({ title, description, benefits, isOutlined, 
           </CustomRichText>
         )}
       </PriceContainer>
-      <CustomButton>Get started</CustomButton>
+      <CustomButton>Subscribe</CustomButton>
     </Wrapper>
   );
 }
@@ -38,7 +38,7 @@ export default function PricingCard({ title, description, benefits, isOutlined, 
 const Wrapper = styled.div<{ isOutlined?: boolean }>`
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 10rem;
   background: rgb(var(--cardBackground));
   box-shadow: ${(p) => (p.isOutlined ? 'var(--shadow-lg)' : 'var(--shadow-md)')};
   transform: ${(p) => (p.isOutlined ? 'scale(1.1)' : 'scale(1.0)')};
@@ -56,12 +56,15 @@ const Wrapper = styled.div<{ isOutlined?: boolean }>`
 `;
 
 const Title = styled.h3`
-  font-size: 4rem;
+  font-size: 5rem;
   text-transform: capitalize;
+  font-weight: bold;
+  font-family: var(--font-mono);
+  color: rgb(var(--primary));
 `;
 
 const Description = styled.p`
-  font-size: 2.5rem;
+  font-size: 2rem;
 `;
 
 const PriceContainer = styled.div`

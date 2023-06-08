@@ -27,7 +27,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Connect your Database to the site" overTitle="STEP 1">
+          <BasicSection imageUrl="/landing-connect.jpg" title="Connect your Database" overTitle="STEP 1">
             <p>
             Seamlessly connect your database to our platform.
             Our system is designed with a user-friendly interface that ensures a smooth and hassle-free connection process.
@@ -43,6 +43,12 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
               <li>Deployable Chatbot</li>
             </ul>
           </BasicSection>
+          <BasicSection imageUrl="/demo-illustration-2.svg" title="Deploy your Database Chatbot" overTitle="STEP 3">
+            <p>
+              Deploy your Chatbot on your website or app and start quering your Database in natural language.
+            </p>
+          </BasicSection>
+
         </WhiteBackgroundContainer>
         <DarkerBackgroundContainer>
           <Cta />

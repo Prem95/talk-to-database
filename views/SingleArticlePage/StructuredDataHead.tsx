@@ -20,6 +20,7 @@ export default function StructuredDataHead(props: StructuredDataHeadProps) {
   const domainName = EnvVars.URL.replace('https://', '');
   const logoUrl = EnvVars.URL + 'logo.png';
 
+
   return (
     <Head>
       <script
